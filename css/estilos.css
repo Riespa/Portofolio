@@ -1,0 +1,257 @@
+:root {
+    --elements1-background: #fffffe;
+    --elements1-paragraph: #5f6c7b;
+    --elements1-button_text: #fffffe;
+    --elements1-headline: #094067;
+    --elements1-button: #3da9fc;
+    --illustration-stroke: #094067;
+    --illustration-highlight: #3da9fc;
+    --illustration-tertiary: #cf062b;
+    --illustration-main: #fffffe;
+    --ilustration-secondary: #90b4ce;
+    --elements2-background: #d8eefe;
+    --elements2-subHeadline: #5f6c7b;
+    --elements2-cardHeading: #094067;
+    --elements2-headline: #094067;
+    --elements2-cardBackground: #fffffe;
+    --elements2-cardParagraph: #5f6c7b;
+    --icons-stroke: #094067;
+    --icons-highlight: #3da9fc;
+    --icons-tertiary: #ef4565;
+    --icons-main: #fffffe;
+    --icons-secondary: #90b4ce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: var(--elements1-background);
+    z-index: 5;
+}
+
+.navContainer {
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_links {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.navbar_links a {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Inicio */
+
+.inicio .backgroundHome {
+    background-color: #094067;
+    /* background-color: var(--elements-background); */
+    background-image: url(../img/closeup-of-computer-display-of-software-developer-typing-database-functions-script-in-it-startup-agency-display-concept-of-programer-writing-source-code-scrolling-text-of-programming-language.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    gap: 110px;
+    width: 75%;
+}
+
+.photoBox {
+    /* background: url(../img/Ricardo\ Pabon.jpg) center center no-repeat; */
+    /* background-size: 400px; */
+    position: relative;
+    width: 30%;
+    height: 40%;
+    min-width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    border: 2px solid var(--illustration-tertiary);
+}
+
+.photoBox .profilePhoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentacion h1 {
+    font-size: 50px;
+    padding: 85px;
+    color: var(--elements1-button_text );
+}
+
+.presentacion h1 span {
+    color: var(--illustration-tertiary);
+    font-weight: bold;
+}
+
+.presentacion h1 #spanCode {
+    color: var(--elements1-button_text);
+}
+
+.presentacion h1 #spanCode::before {
+    content: "<";
+}
+
+.presentacion h1 #spanCode::after {
+    content: "/>";
+}
+
+.sobreMi {
+    background: var(--elements2-background);
+}
+
+h2 {
+    font-size: 45px;
+    color: var(--elements2-headline);
+}
+
+.aboutContainer h2 {
+    margin-bottom: 30px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.descripcion {
+    background-color: var(--elements2-cardBackground);
+    grid-column: 1;
+    border-radius: 3px;
+    padding: 30px 30px;
+}
+
+.descripcion h3 {
+    font-size: 30px;
+    margin: 20px;
+    color: var(--elements2-cardHeading);
+}
+
+p {
+    color: var(--elements2-cardParagraph); 
+}
+
+.descripcion p {
+    text-align: justify;
+    justify-content: center;
+    margin: 20px;
+}
+
+.skillSet {
+    background-color: var(--elements2-cardBackground);
+    grid-column: 2;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.skillFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 8% 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.skillSet h3 {
+    font-size: 30px;
+    margin: 20px;
+    color: var(--elements2-cardHeading);
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+}
+
+.descripcion .button {
+    margin-top: 45px;
+}
+
+.downloadCv {
+    width: auto;
+    height: 50px;
+    color: var(--elements1-button_text);
+    background: var(--elements1-button);
+    display: inline-block;
+    border-radius: 3px;
+    padding: 12px 30px;
+}
+
+.contacto {
+    background-color: var(--elements2-background);
+}
+
+.contactIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 10%;
+    gap: 10%;
+}
+
+.contactIcon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
